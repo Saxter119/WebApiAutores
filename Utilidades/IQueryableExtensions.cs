@@ -6,8 +6,7 @@ namespace webAPIAutores.Utilidades
     {
         public static IQueryable<T> Paginar<T>(this IQueryable<T> queryable, PaginacionDTO paginacionDTO)
         {
-            return queryable
-                .Skip((paginacionDTO.Pagina - 1) * paginacionDTO.RecordDePagina).Take(paginacionDTO.RecordDePagina);
+            return queryable.Skip((paginacionDTO.Pagina - 1) * paginacionDTO.RecordDePagina).Take(paginacionDTO.RecordDePagina);
         }
     }
 }
