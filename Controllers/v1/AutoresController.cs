@@ -36,6 +36,7 @@ namespace webAPIAutores.Controllers.v1
         /// La lista de todos los autores
         /// </summary>
         /// <returns></returns>
+        /// 
         [HttpGet(Name = "obtenerAutoresv1")] //api/autores
         [ServiceFilter(typeof(HATEOASAutorFilterAttribute))]
         [AllowAnonymous]
